@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+   <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <section>
+        <h1>Entendendo o DOM</h1>
+        <p>Estou progamando kk e estou testando algumas coisas, enfim vamos ao que interessa.</p>
+        <p>Começando a entender o Dom. Para isso temos que saber o que a árvore DOM, que é uma do tipo hierárquica, em que a parte ''window'' é a pai de todas as outras. E que tem várias ''filhas'', e que essas filhas tem suas filhas e assim por diante. </p>
+        <p>
+            Só um teste para o js :)
+        </p>
+        <div id="whatever">
+            CLIQUE-ME
+        </div>
+
+        <script>
+            var p1 = window.document.getElementsByTagName('p')[0]
+            window.document.write('Está escrito assim: </br>' + p1.innerText)
+            var d = window.document.getElementById('whatever')
+            /*d.style.background = 'yellow'
+            d.innerHTML = 'Olá, Mundo!'*/
+            var d = window.document.querySelector('div#whatever')
+            d.style.color = 'red'
+            
+        </script>
+    </section>
+</body>
+</html>
