@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Js Insane</title>
     <style>
-        div#clica {
+        div#area {
             background-color: coral;
             width: 250px;
             height: 150px;
@@ -18,8 +18,28 @@
 </head>
 <body>
     <h1>JavaScript Externo</h1>
-    <div id="clica">
-        Aguardando...
+    <div id="area"> <!--Não se esquecer de colocar os () nos eventos dentro da div também pqp em diego se atente COLOCAR () NOS EVENTOS-->
+        Interaja...
     </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicou)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        
+        function clicou() {
+            a.innerText = 'Clicou!'
+            a.style.background = 'green'
+        }
+        function entrar() {
+            a.innerText = 'Entrou!'
+            a.style.background = 'red'
+        }
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.background = 'coral'
+        }
+    </script>
 </body>
 </html>

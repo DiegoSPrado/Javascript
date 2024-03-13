@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafios Boas-Vindas</title>
+    <style>
+        body {
+            font: normal 1.2em Arial;
+        }
+
+        button {
+            border: 1px solid black;
+            width: 200px;
+            height: 100px;
+            background-color: darkgray;
+            text-align: center;
+            line-height: 100px;
+            font-size: 1.4em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Boas-Vindas</h1>
+
+    <button onclick="clicar()">Boas-Vindas</button>
+
+    <script>
+        function clicar() {
+            var btn = window.prompt('Qual é o seu nome?')
+            var nome = window.prompt(`Olá ${btn}, qual é a sua idade?`)
+            window.alert(`Acabei de conhecer ${btn}, que tem ${nome} anos de idade!`)
+        }
+    </script>    
+</body>
+</html>

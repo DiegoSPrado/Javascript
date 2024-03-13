@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio JS</title>
+    <style>
+        input {
+            width: 200px;
+            height: 100px;
+            font: normal 1.2em Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculando o Troco </h1>
+    <input type="button" value="Comprar Produto" id="botao">
+
+    <script>
+        var btn = window.document.getElementById('botao')
+        btn.addEventListener('click', clicar)
+
+        function clicar() {
+            window.prompt = 'Que produto você está comprando?'
+        }
+    </script>
+</body>
+</html>
