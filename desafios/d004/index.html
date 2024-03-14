@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calculando o Troco</title>
+    <link rel="stylesheet" href="../estilos/style.css">
 </head>
 <body>
-    
+    <h1>Calculando o Troco</h1>
+    <button id="btn" onclick="clicar()">Comprar Produto</button>
+
+    <script>
+        function clicar() {
+         var prod = prompt('Que produto você está comprando?')
+         var preço = Number(prompt(`Quanto custa este ${prod} que você está comprando?`)) 
+         var quant = Number(prompt(`Qual será o valor que você irá pagar ${prod}.`))
+         var troco = quant - preço
+        alert(`Você comprou ${prod} que custou ${preço}. Deu R$ ${quant} em dinheiro e vai receber R$ ${troco} de troco.`)  
+        }
+        
+    </script>
 </body>
 </html>

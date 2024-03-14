@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <link rel="stylesheet" href="../estilos/style.css">
+</head>
+<body>
+    <h1>Converosr de Medidas</h1>
+    <button id="btn" onclick="clicar()">Converter</button>
+    <p id="aaaa">Clique no botão acima para iniciar.</p>
+
+    <script>
+        
+        
+        function clicar() {
+            var m = prompt('Digite uma distância em metros (m).')
+           
+            var par = document.querySelector('p#aaaa')
+            
+            
+            par.innerHTML = `A distância de ${m} metros, corresponde a... </br>`
+            par.innerHTML = `${km} quilômetros (Km)`
+        }
+        
+    </script>
+</body>
+</html>
