@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual a origem</title>
+</head>
+<body>
+    <h1>Qual é o seu país de origem?</h1>
+    Seu país: <input type="text" name="npais" id="idpais">
+    <input type="button" value="Enviar" onclick="calcular()">
+    <div id="tela">
+
+    </div>
+    <script>
+        function calcular() {
+            var origem = String(document.querySelector('id#idpais')) //seleciona o seletor lol
+            var res = document.querySelector('div#tela')
+            res.innerHTML = `<p>O seu país de origem é ${origem}</p>`
+            
+        }
+    </script>
+</body>
+</html>

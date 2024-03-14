@@ -9,21 +9,23 @@
 <body>
     <h1>Converosr de Medidas</h1>
     <button id="btn" onclick="clicar()">Converter</button>
-    <p id="aaaa">Clique no botão acima para iniciar.</p>
+    <div id="aaaa"><p>Clique no botão acima para iniciar.</p>
+    </div>
 
     <script>
         
         
         function clicar() {
-            var m = prompt('Digite uma distância em metros (m).')
-           
-            var par = document.querySelector('p#aaaa')
-            
-            
-            par.innerHTML = `A distância de ${m} metros, corresponde a... </br>`
-            par.innerHTML = `${km} quilômetros (Km)`
-        }
-        
+            var m = Number(prompt('Digite uma distância em metros (m).'))
+            var par = document.querySelector('div#aaaa')
+            par.innerHTML = `<h2>A distância de ${m.toLocaleString('pt-br')} metros, corresponde a...</h2>`
+            par.innerHTML += `<p>${(m/1000).toLocaleString('pt-br')} quilômetros (Km)</p>`
+            par.innerHTML += `<p>${(m/100).toLocaleString('pt-br')} hectômetros (Hm)</p>`
+            par.innerHTML += `<p>${(m/10).toLocaleString('pt-br')} decâmetros (Dam)</p>`
+            par.innerHTML += `<p>${(m*10).toLocaleString('pt-br')} decímetros (dm)</p>`
+            par.innerHTML += `<p>${(m*100).toLocaleString('pt-br')} centímetros (cm)</p>`
+            par.innerHTML += `<p>${(m*1000).toLocaleString('pt-br')} milímetros (mm)</p>`    
+            }
     </script>
 </body>
 </html>
