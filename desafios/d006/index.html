@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="../estilos/style.css">
 </head>
 <body>
-    
+    <h1>Conversor de Real p/ Dólar ou Yen</h1>
+    <button id="btn" onclick="clique()">Converter</button>
+    <div id="plv">
+        <p>Clique no botão acima para iniciar.</p>
+    </div>
+    <script>
+        var moeda = window.prompt('Antes de mais nada, qual moeda irá ser utilizada, yen ou dólar?')
+        var conv = Number(window.prompt(`Você escolheu ${moeda}. Quanto está a cotação atual desta moeda?`))
+
+        function clique(){
+            var valor = Number(window.prompt(`Quantos R$ você quer converter para ${moeda}?`))
+            var total = document.querySelector('div#plv')
+            var s = valor / conv
+            total.innerHTML = `Você tem ${s} em ${moeda}`
+        }
+    </script>
 </body>
 </html>
