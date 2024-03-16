@@ -7,17 +7,22 @@
 </head>
 <body>
     <h1>Qual é o seu país de origem?</h1>
-    Seu país: <input type="text" name="npais" id="idpais">
+    Seu país: <input type="text" name="npais" id="idpais" autocomplete="off">
     <input type="button" value="Enviar" onclick="calcular()">
     <div id="tela">
 
     </div>
     <script>
         function calcular() {
-            var origem = String(document.querySelector('id#idpais')) //seleciona o seletor lol
-            var res = document.querySelector('div#tela')
-            res.innerHTML = `<p>O seu país de origem é ${origem}</p>`
-            
+            var origem = document.querySelector('input#idpais') 
+            var scr1 = window.document.getElementById('tela')
+            var país = String(origem.value)
+            scr1.innerHTML = `<p>Seu país é ${país}!</p>`
+            if(país == 'Brasil') {
+                scr1.innerHTML = `Você é brasileiro!`
+            } else {
+                scr1.innerHTML = `Você é estrangeiro! `
+            }
         }
     </script>
 </body>
