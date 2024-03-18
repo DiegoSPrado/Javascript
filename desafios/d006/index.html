@@ -19,7 +19,7 @@
         function clique(){
             var valor = Number(window.prompt(`Quantos R$ você quer converter para ${moeda}?`))
             var total = document.querySelector('div#plv')
-            var s = valor / conv
+            var s = (valor / conv).toFixed(2)
             total.innerHTML = `Você tem ${s} em ${moeda}`
         }
     </script>
