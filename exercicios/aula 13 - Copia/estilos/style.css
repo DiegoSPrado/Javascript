@@ -19,29 +19,12 @@ header {
 }
 
 section {
-    display: grid;
-    align-items: center;
-    justify-items: center;
     margin: auto;
     margin-top: 100px;
     background-color: white;
-    width: 70vw;
-    height: 70vh;
+    width: 800px;
+    height: 500px;
     border-radius: 10px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.226);
-}
-
-div#d1 {
-    margin: 0px;
-    color: black;
-}
-
-img {
-    display: block;
-    margin: auto;
-    width: 70%;
-    border-radius: 50%;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.336);
 }
 
 footer {
