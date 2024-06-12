@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média Alunos</title>
+    <style>
+        body {
+            background-color: rgb(102, 102, 223);
+            font: normal 20px Arial;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Média Alunos Escola Fodastica</h1>
+
+</body>
+<script>
+    var nome = prompt('Qual é o seu nome?')
+    var média = Number(prompt(`Qual foi a sua média?`))
+    
+    var res = média >= 7 ? 'Aprovado' : 'Reprovado'
+    document.write(`O(A) aluno(a) ${nome} ficou com a média ${média}.</br>`)
+    document.write(`E com essa média ele(a) foi ${res}.`) 
+</script>
+</html>
