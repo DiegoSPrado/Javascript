@@ -10,6 +10,10 @@
             color: white;
             font: normal 20px arial;
         }
+        div#msg {
+            width: 350px;
+            background-color: black;
+        }
     </style>
 </head>
 <body>
@@ -20,12 +24,14 @@
     <p>
         Aprendendo a usar o <strong>DOM</strong> em JavaScript.
     </p>
-    <div>
+    <div id="msg">
         Clique em mim
     </div>
 </body>
 <script>
     var p1 = document.getElementsByTagName('p')[1] 
-    window.document.write(p1.innerHTML) 
+    window.document.write(p1.innerHTML)
+    var caixa = document.getElementById('msg')
+    caixa.style.background = 'blue' 
 </script>
 </html>
