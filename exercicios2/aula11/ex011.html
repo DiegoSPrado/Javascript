@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual é o seu País</title>
+</head>
+<body>
+    <h1>Qual o seu País de origem?</h1>
+    <label for="txtpa">País de origem: </label>
+    <input type="text" name="txtpa" id="txtpa">
+    <p>
+       <label for="txtmora">País onde vive: </label> 
+        <input type="text" name="txtmora" id="txtmora">
+    </p>
+    <input type="button" value="Verificar" onclick="paisOrig()"> 
+    <div id="telares"></div> 
+</body>
+<script>
+    var res = document.querySelector('div#telares')
+    function paisOrig() {
+        var txttv = document.getElementById('txtpa')
+        var txtmo = document.querySelector('input#txtmora')
+        var pais = String(txttv.value)
+        var PaisVive = String(txtmo.value)
+        res.innerHTML = `<p>O seu país de origem é ${pais}. E você vive em ${PaisVive}.</p>`
+        if (pais == 'Brasil')  {
+            res.innerHTML += '<p>E você é brasileiro(a)!</p>'
+        } else {
+            res.innerHTML += '<p>E você é não é braseileiro(a).</p>'
+        }   if (PaisVive == pais) {
+            res.innerHTML += '<p>Você vive no seu país de origem.</p>'
+        } else {
+            res.innerHTML += '<p>Você vive em outro país, e é um estrangeiro(a).</p>'
+        }
+    }
+</script>
+</html>
