@@ -1,7 +1,7 @@
     var msg = document.querySelector('div#d1')
     var img = document.querySelector('img#imagem')
-    var hrExt = new Date()
-    var hora = hrExt.getHours()
+    //var hrExt = new Date()
+    var hora = 19
     
     var msg2 = document.querySelector('h1#txt')
     msg.innerHTML = `<p>Agora são ${hora} horas.</p>`

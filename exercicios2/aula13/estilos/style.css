@@ -1,0 +1,49 @@
+@charset "UFT-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font: normal 20px Arial;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 30px;
+}
+
+body {
+    background-color: #cf957a;
+    /* #cf957a*/
+}
+
+section {
+    display: grid;
+    place-items: center; /*Centraliza horizontalmente */
+    height: 100vh;
+    
+}
+
+div#tela {
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+}
+
+
+
+img {
+    display: block;
+    margin: auto;
+    width: 70%;
+    border-radius: 47%;
+}
