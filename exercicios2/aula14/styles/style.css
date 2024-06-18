@@ -21,7 +21,10 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.534);
 }
 
-
+img#foto {
+    border-radius: 60%;
+    width: 300px;
+}
 
 footer {
     padding-top: 20px;
