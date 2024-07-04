@@ -54,6 +54,10 @@ div#calculator {
     margin-top: 8px;
     display: flex;
     justify-content: space-between;
+    font-size: 36px;
+    line-height: 140%;
+    color: #ebebeb;
+    text-align: right;
 }
 
 #result span {
