@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Notas de Alunos</h1>
+    <p>
+        <label for="nt1">Primeira Nota: </label>
+        <input type="number" name="nt1" id="nt1">
+    </p>
+    <p>
+        <label for="nt2">Segunda Nota: </label>
+        <input type="number" name="nt2" id="nt2">
+    </p>
+    <input type="button" value="resultado" onclick="media()">
+    <p id="resultado">Média: </p>
+</body>
+<script>
+   function media() {
+    let nota1 = Number(document.querySelector('input#nt1').value)
+    let nota2 = Number(document.querySelector('input#nt2').value)
+    let media = (nota1 + nota2)/2
+    let res = document.querySelector('p#resultado')
+
+    if(nota1 && nota2 == 0 || nota1 && nota2 >= 10) {
+        res.innerHTML = 'Notas inválidas. Digite valores entre 0 e 10.'
+        
+    } else {   
+    res.innerHTML += `${media}`
+    
+    }
+   return
+   
+   } 
+</script>
+</html>

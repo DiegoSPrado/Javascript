@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Quantos Anos você perdeu?</h1>
+    <p><label for="cigs">Quantos cigarros você fuma por dia?</label>
+    </p>
+    <input type="number" name="cigs" id="cigs">
+    <p><label for="anosfuma">A quantos anos fuma?</label></p>
+    <input type="number" name="anosfuma" id="anosfuma">
+    <input type="button" value="Anos Perdidos" onclick="fumassa()">
+    <p id="resultados"></p>
+</body>
+<script>
+    function fumassa() {
+        let cigdia = Number(document.querySelector('input#cigs').value)
+        let anosFuma = Number(document.querySelector('input#anosfuma').value)
+        let res = document.querySelector('p#resultados')
+
+        let diasPerd = ((anosFuma * 365 * cigdia) * 10)/1440
+
+         
+        res.innerHTML = `Você perdeu ${diasPerd.toFixed(2)} dias de vida.`
+    }
+</script>
+</html>

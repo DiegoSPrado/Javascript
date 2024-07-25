@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <input type="number" name="" id="num1"> +
+    <input type="number" name="" id="num2"> =
+    <button onclick="gerar()">Gerar Conta</button>
+    <p id="result">resultado Aqui </p>
+</body>
+<script>
+    
+    function gerar() {
+    let tela1 = document.querySelector('input#num1')
+    let tela2 = document.querySelector('input#num2')
+    let n1 = Number(tela1.value)
+    let n2 = Number(tela2.value)
+    
+    let s = n1 + n2 
+    let res = document.querySelector('p#result')
+    
+    res.innerHTML += s
+    
+    }
+</script>
+</html>
