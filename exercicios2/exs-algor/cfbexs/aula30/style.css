@@ -19,8 +19,17 @@
     border-radius: 5px;
 }
 
+#container > .ling2 {
+    border: 2px solid rgb(100, 100, 100);
+}
+
 #container > div:hover {
     cursor: pointer;
     background-color: gainsboro;
     transition: 0.3s;
+}
+
+.destaque {
+    border: 2px solid white;
+    background-color: rgba(64, 15, 199, 0.308);
 }
