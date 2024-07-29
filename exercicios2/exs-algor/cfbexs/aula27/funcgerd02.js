@@ -5,10 +5,3 @@ function* loop() {
     }
 }
 
-const giro = loop()
-
-for (let c of giro) {
-    console.log(c)
-    if (c === 10) break;
-    
-}
