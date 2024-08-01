@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Criação de Carros</h1>
+    <div id="criarCarro" class="criarCarro">
+        <p class="inputForm">
+            <label for="iModelo">Modelo: </label>
+            <input type="text" name="iModelo" id="iModelo" placeholder="Modelo do Veículo">
+        </p>
+        <p class="inputForm">
+            <label for="iPortas">Portas: </label>
+            <input type="number" name="iPortas" id="iPortas">
+        </p>
+        <p class="inputForm">
+            <label for="iBlin">Blindagem: </label>
+            <input type="number" name="iBlin" id="iBlin" value="0" disabled>
+        </p>
+        <p class="inputForm">
+            <label for="iMun">Munição: </label>
+            <input type="number" name="iMun" id="iMun" disabled value="0">
+        </p>
+        <p style="margin: 30px;">
+            <label>Tipo:</label>
+            <label for="TipoCom">Comum: </label>
+            <input type="radio" name="iTipo" id="TipoCom" checked value="c">
+            <label for="TipoMil">Militar:</label>
+            <input type="radio" name="iTipo" id="TipoMil" value="m">
+        </p>
+        <p class="inputForm">
+            <button id="adicionar">Adicionar</button>
+        </p>
+    </div>
+    <div id="carrosdiv" class="carros">
+        <p></p>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

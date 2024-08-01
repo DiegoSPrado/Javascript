@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    margin: 40px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.criarCarro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.carros {
+    display: flex;
+    margin: auto;  
+    justify-content: center;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.carro {
+    border: 2px #008 solid;
+    background-color: #8cf;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin: 10px;
+}
+
+.btnExcluir {
+
+}
+
+.inputForm {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.inputForm input {
+    background-color: #eee;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.inputForm button {
+    background-color: #888;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
